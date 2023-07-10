@@ -4,4 +4,4 @@ const Register = () => {
   return <div>Register</div>;
 };
 
-export default Login;
+export default Register;
