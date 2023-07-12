@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 async function getData() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+  const res = await fetch("http://localhost:3000/api/posts", {
     next: { revalidate: 10 },
   });
 
@@ -27,7 +27,7 @@ const Blog = async () => {
         >
           <div className={styles.imageContainer}>
             <Image
-              src="/heroPage.jpg"
+              src={item.image}
               alt=""
               width={400}
               height={250}
