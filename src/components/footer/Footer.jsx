@@ -6,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div>2023 IamBells. All rights reserved.</div>;
+      <div>2023 IamBells. All rights reserved.</div>
       <div className={styles.socials}>
         <Link href="https://www.facebook.com">
           <Image
